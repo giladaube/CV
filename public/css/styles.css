@@ -1,0 +1,299 @@
+body {
+  text-align: center;
+  direction: rtl;
+  position: relative;
+  background: #a2d5f2;
+}
+
+/* Fonts */
+
+.font-navbar-brand {
+  font-family: 'Suez One';
+  font-size: 3.5rem;
+  text-shadow: 2px 1px #ecf4f3;
+}
+.font-navbar-links {
+  font-family: 'Heebo';
+  font-size: 1.2rem;
+}
+.font-Big-Heading {
+  font-family: "Heebo";
+  font-size: 2.3rem;
+  font-weight: 600;
+}
+.font-text {
+  font-family: 'Alef';
+  font-size: 1.2rem;
+}
+
+/* container */
+
+.padding-heading {
+  padding: 3% 15%;
+}
+.padding-section {
+  padding: 0 15%;
+}
+.text-continer {
+  margin: 0 10%;
+  padding: 0 5%;
+  text-align: right;
+}
+
+/* colors */
+.font-text-color1 {
+  color: #07689f;
+}
+.font-Big-Heading-color1 {
+  color: #07689f;
+  text-shadow: 2px 1px #ecf4f3;
+}
+
+.color-section2 {
+  background-color: #f0a500;
+}
+.font-text-color2 {
+  color: #f4f4f4;
+}
+.font-Big-Heading-color2 {
+  color: #ecf4f3;
+  text-shadow: 2px 1px #a2d5f2;
+}
+
+/* visibility */
+
+.hidden {
+  visibility: hidden;
+}
+.display-none {
+  display: none;
+}
+
+/* Fontawesome */
+
+.fas {
+  padding: .5rem .2rem;
+  padding-top: .75rem;
+}
+
+/* image for md screen */
+
+.img-md {
+  display: none;
+}
+
+/* Title */
+
+#title {
+  text-align: left;
+  background-color: #ffc93c;
+  padding: 3% 0 3% 0;
+  direction: ltr;
+  position: relative;
+  width: 100%;
+}
+.navbar-light .navbar-brand {
+  color: #07689f;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: #07689f;
+}
+#title-md {
+  display: none;
+}
+
+/* summary */
+
+#summary {
+  padding: 2% 0 5% 0;
+  position: relative;
+  z-index: 10;
+  width: 100%;
+}
+.img-summary {
+  float: left;
+  border-radius: 100%;
+  margin-left: 10rem;
+  margin-right: 5rem;
+  margin-top: 3rem;
+}
+.summary-text-continer {
+  margin-top: 2%;
+}
+
+/* experience */
+
+#experience {
+  padding: 2% 0 5% 0;
+  position: relative;
+  z-index: 9;
+  width: 100%;
+}
+.experience-text {
+  clear: both;
+}
+.img-experience {
+  float: right;
+  border-radius: 100%;
+  margin-left: 5rem;
+  margin-right: 12rem;
+  margin-bottom: 1rem;
+}
+
+/* military */
+
+#military {
+  padding: 2% 0 5% 0;
+  position: relative;
+  z-index: 8;
+  width: 100%;
+}
+.img-military {
+  float: left;
+  border-radius: 100%;
+  margin: 2rem 5rem .5rem 10rem;
+}
+
+/* education */
+
+#education {
+  padding: 2% 0 5% 0;
+  position: relative;
+  z-index: 7;
+  width: 100%;
+}
+.carousel-indicators {
+  margin: 0 auto;
+  padding-bottom: 3%;
+  top: 1rem;
+  position: relative;
+}
+.img-education {
+  margin: 0 auto;
+  padding: 0 auto;
+}
+.education-text-continer {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 3%;
+}
+
+/* knowledge */
+
+#knowledge {
+  padding: 2% 0 5% 0;
+  position: relative;
+  z-index: 6;
+  width: 100%;
+}
+.img-knowledge {
+  float: right;
+  border-radius: 100%;
+  margin-left: 4rem;
+  margin-right: 8rem;
+}
+
+/* language */
+
+#language {
+  padding: 2% 0 5% 0;
+  position: relative;
+  z-index: 5;
+  width: 100%;
+}
+
+/* contact */
+#contact {
+  padding: 2% 0 5% 0;
+  position: relative;
+  z-index: 4;
+  width: 100%;
+}
+
+@media (max-width: 576px) {
+
+}
+
+@media (max-width: 768px) {
+  .padding-heading {
+    padding: 5% 15% 3% 15%;
+  }
+  .img-summary, .img-experience {
+    width: 50%;
+  }
+  .img-knowledge {
+    width: 30%;
+    height: 30%;
+  }
+  .carousel-indicators {
+    display: none;
+  }
+}
+
+
+@media (max-width: 992px) {
+  #title-md {
+    display: block;
+  }
+  #title-lg {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    margin: 3% auto;
+  }
+  .text-continer {
+    clear: both;
+    text-align: center;
+    margin: 1% 3%;
+  }
+  .img-md {
+    display: block;
+  }
+  .img-lg {
+    display: none;
+  }
+  .icon {
+    padding: .5rem 0;
+  }
+
+/* summary */
+  .img-summary {
+    display: inline;
+    margin: 0 auto 3% auto;
+    float: none;
+    padding-top: .2rem
+  }
+  .summary-text-continer {
+    padding-top: 2%;
+  }
+
+/* experience */
+  .img-experience {
+    margin: 0 auto 1% auto;
+    float: none;
+  }
+
+/* military */
+  .img-military {
+    margin: 0 auto 5% auto;
+    float: none;
+    width: 35%;
+  }
+
+/* education */
+  .img-education {
+    margin: 0 auto 10% auto;
+    width: 35%;
+  }
+
+/* knowledge */
+  .img-knowledge {
+    margin: 0 auto 1% auto;
+    float: none;
+    width: 200px;
+    height: 200px;
+  }
+}
