@@ -2,10 +2,10 @@
 
 var elements = ["summary", "experience", "military", "education", "knowledge", "language"];
 var height;
-if (window.innerWidth > 350) {
+if (window.innerWidth > 1000) {
   height = -350;
 } else {
-  height = -3500;
+  height = -500;
 }
 
 var windowHeight;
