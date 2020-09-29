@@ -5,7 +5,7 @@ var height;
 if (window.innerWidth > 1200) {
   height = -350;
 } else {
-  height = -600;
+  height = -500;
 }
 
 var windowHeight;
