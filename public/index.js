@@ -2,10 +2,12 @@
 
 var elements = ["summary", "experience", "military", "education", "knowledge", "language"];
 var height;
-if (window.innerWidth > 800) {
-  height = -350;
+var media = window.matchMedia("only screen and (max-device-width: 500px)");
+if (media.matches) {
+  console.log("true");
+  height = -2000;
 } else {
-  height = -800;
+  height = -400;
 }
 
 var windowHeight;
@@ -13,6 +15,7 @@ $(document).scroll(function() {
   windowHeight = window.innerHeight;
   checkPosition();
 })
+
 
 
 function checkPosition() {
@@ -23,7 +26,11 @@ function checkPosition() {
       if (positionFromTop - windowHeight <= height) {
         element.classList.add("display-none");
         element.classList.remove("hidden");
-        $("#" + elements[i] + " .display-none").show(1500);
+        if (i % 2 != 0) {
+          $("#" + elements[i] + " .display-none").show(1200);
+        } else {
+          $("#" + elements[i] + " .display-none").slideDown(1200);
+        }
       }
     }
     if (i % 2 != 0) {
