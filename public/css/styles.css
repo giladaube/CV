@@ -211,22 +211,43 @@ body {
 }
 
 @media only screen and (max-device-width: 500px) {
+  #summary {
+    margin: 2% auto;
+  }
   #summary .text-continer {
+    margin: 2% auto;
+  }
+  #experience {
     margin: 2% auto;
   }
   #experience .text-continer {
     margin: 2% auto;
   }
+  #military {
+    margin: 2% auto;
+  }
   #military .text-continer {
+    margin: 2% auto;
+  }
+  #education {
     margin: 2% auto;
   }
   #education .text-continer {
     margin: 2% auto;
   }
+  #knowledge {
+    margin: 2% auto;
+  }
   #knowledge .text-continer {
     margin: 2% auto;
   }
+  #language {
+    margin: 2% auto;
+  }
   #language .text-continer {
+    margin: 2% auto;
+  }
+  #contact {
     margin: 2% auto;
   }
   #contact .text-continer {
@@ -243,7 +264,7 @@ body {
     font-size: 4rem;
   }
   .font-text {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 }
 
