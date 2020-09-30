@@ -5,7 +5,7 @@ var height;
 var media = window.matchMedia("only screen and (max-device-width: 500px)");
 if (media.matches) {
   console.log("true");
-  height = -2500;
+  height = -2100;
 } else {
   height = -400;
 }
