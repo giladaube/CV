@@ -210,8 +210,41 @@ body {
   width: 100%;
 }
 
-@media (max-width: 576px) {
-
+@media only screen and (max-device-width: 500px) {
+  #summary .text-continer {
+    margin: 2% auto;
+  }
+  #experience .text-continer {
+    margin: 2% auto;
+  }
+  #military .text-continer {
+    margin: 2% auto;
+  }
+  #education .text-continer {
+    margin: 2% auto;
+  }
+  #knowledge .text-continer {
+    margin: 2% auto;
+  }
+  #language .text-continer {
+    margin: 2% auto;
+  }
+  #contact .text-continer {
+    margin: 2% auto;
+  }
+  .font-navbar-brand {
+    font-size: 5.5rem;
+    text-shadow: 3px 1.5px #ecf4f3;
+  }
+  .font-navbar-links {
+    font-size: 3rem;
+  }
+  .font-Big-Heading {
+    font-size: 4rem;
+  }
+  .font-text {
+    font-size: 3rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -229,7 +262,6 @@ body {
     display: none;
   }
 }
-
 
 @media (max-width: 992px) {
   #title-md {
