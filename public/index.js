@@ -2,10 +2,10 @@
 
 var elements = ["summary", "experience", "military", "education", "knowledge", "language"];
 var height;
+var notMobileView = true;
 var media = window.matchMedia("only screen and (max-device-width: 500px)");
 if (media.matches) {
-  console.log("true");
-  height = -1500;
+  notMobileView = false;
 } else {
   height = -400;
 }
@@ -21,7 +21,7 @@ $(document).scroll(function() {
 function checkPosition() {
   for (var i = 0; i < elements.length; i++) {
     var element = document.querySelector("#" + elements[i] + " .hidden");
-    if (element != null) {
+    if (element != null && notMobileView) {
       var positionFromTop = element.getBoundingClientRect().top;
       if (positionFromTop - windowHeight <= height) {
         element.classList.add("display-none");
